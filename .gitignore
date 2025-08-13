@@ -16,3 +16,9 @@ yarn-error.log*
 # OS/editor junk
 .DS_Store
 *.swp
+node_modules/
+.next/
+dist/
+out/
+*.log
+.env*
