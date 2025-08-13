@@ -20,6 +20,8 @@ import {
 } from 'lucide-react';
 import Swal from 'sweetalert2';
 import Navbar from '@/components/Navbar';
+import TogaNetwork from '@/components/HeroEkosistem';
+import BrandsSection from '@/components/BrandsSection';
 import Image from 'next/image';
 
 const GOLD_GRAD =
@@ -235,7 +237,7 @@ export default function TogaLanding({ logoSrc = '/toga-icon.png' }: Props) {
 				</div>
 			</header>
 
-			<section className="relative overflow-hidden">
+			{/* <section className="relative overflow-hidden">
 				<div
 					className={`${container} grid gap-10 py-16 md:grid-cols-2 md:py-24`}
 				>
@@ -319,7 +321,12 @@ export default function TogaLanding({ logoSrc = '/toga-icon.png' }: Props) {
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
+			<div className="relative">
+				<TogaNetwork />
+			</div>
+
+			<BrandsSection />
 
 			<section id="services" className="py-16 md:py-24">
 				<div className={`${container}`}>
