@@ -180,9 +180,11 @@ export default function HeroEkosistem({
 										}}
 										animate={{ strokeDashoffset: 0, opacity: 1 }}
 										transition={{
-											duration: 1.1,
+											duration: 3.1,
 											delay: e.delay ?? i * 0.15,
 											ease: 'easeOut',
+											repeat: Infinity, // ⬅ loop terus
+											// repeatType: 'reverse',
 										}}
 										className={hiddenMobile ? 'hidden sm:block' : ''}
 									/>
