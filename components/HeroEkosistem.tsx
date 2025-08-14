@@ -182,7 +182,7 @@ export default function HeroEkosistem({
 										transition={{
 											duration: 3.1,
 											delay: e.delay ?? i * 0.15,
-											ease: 'easeOut',
+											ease: 'linear',
 											repeat: Infinity, // ⬅ loop terus
 											// repeatType: 'reverse',
 										}}
